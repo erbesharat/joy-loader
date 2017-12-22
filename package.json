@@ -1,10 +1,11 @@
 {
-  "name": "joy-loader",
+  "name": "webpack-joy-loader",
   "version": "0.0.1",
   "description": "A webpack loader for Joy",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/erbesharat/joy-loader/issues"
   },
-  "homepage": "https://github.com/erbesharat/joy-loader#readme"
+  "homepage": "https://github.com/erbesharat/joy-loader#readme",
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^21.2.1",
+    "memory-fs": "^0.4.1",
+    "webpack": "^3.10.0"
+  }
 }
