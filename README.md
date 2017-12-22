@@ -2,7 +2,26 @@
 A webpack loader for [Joy](https://github.com/matthewmueller/joy)
 
 ## Usage
-TODO
+1. You should first install [Go](https://golang.org/doc/install)
+2. Then install [Joy](https://github.com/matthewmueller/joy#getting-started)
+3. And install joy-loader with npm
+```shell
+npm install --save-dev webpack-joy-loader
+```
+4. Then use it in your webpack.config.js
+```javascript
+module.exports = {
+  module: {
+    rules: [{
+      test: /\.go$/,
+      use: {
+        loader: "webpack-joy-loader",
+        options: {}
+      }
+    }]
+  }
+}
+```
 
 ## Contributing
 
