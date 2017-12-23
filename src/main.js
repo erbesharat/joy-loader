@@ -16,8 +16,8 @@ module.exports = async function (source) {
       })
     })
   } catch (error) {
-    console.log(error)
+    throw new Error(error);
   }
-  console.log(stdout)
+
   return stdout
 }
